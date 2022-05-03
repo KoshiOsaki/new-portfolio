@@ -1,14 +1,14 @@
-import { FC } from "react";
-import { Header } from "./Header";
-import style from "../styles/Layout.module.css";
-import { Box } from "@chakra-ui/react";
-import { Props } from "framer-motion/types/types";
+import { FC } from 'react';
+import { Header } from './Header';
+import style from '../styles/Layout.module.css';
+import { Box } from '@chakra-ui/react';
+import { Props } from 'framer-motion/types/types';
 
 export const Layout: FC<Props> = ({ children }) => {
   return (
     <Box position="relative" overflow="hidden" pb="800px">
       <Header />
-      <Box pt="600px">{children}</Box>
+      <Box pt="200px">{children}</Box>
 
       <>
         <div className={style.circle1} />
@@ -20,15 +20,14 @@ export const Layout: FC<Props> = ({ children }) => {
 
       <div
         style={{
-          position: "absolute",
+          position: 'absolute',
           zIndex: -100,
-          top: String(2400) + "px",
-          right: "-150px",
-          margin: "auto",
-          width: "650px",
-          height: "650px",
-          background:
-            "radial-gradient(circle farthest-side, #4de189, transparent)",
+          top: String(2400) + 'px',
+          right: '-150px',
+          margin: 'auto',
+          width: '650px',
+          height: '650px',
+          background: 'radial-gradient(circle farthest-side, #4de189, transparent)',
         }}
       />
 

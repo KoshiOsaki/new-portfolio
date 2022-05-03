@@ -11,7 +11,7 @@
   animation: shake 1s linear;
 }
 
-.body {
+/* .body {
   background: #000;
 }
 
@@ -25,7 +25,7 @@ svg#heavy {
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 
 @keyframes shake {
   0% {
@@ -71,7 +71,7 @@ svg#heavy {
     transform: translate(7px, 6px);
   } */
 }
-figure.svg-container {
+/* figure.svg-container {
   margin: 0;
 }
 figure.svg-container figcaption {
@@ -82,4 +82,4 @@ figure.svg-container figcaption {
 }
 figure.svg-container:hover svg {
   animation: shake 1s linear;
-}
+} */

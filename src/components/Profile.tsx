@@ -3,15 +3,12 @@ import {
   Button,
   Grid,
   GridItem,
-  HStack,
   Link,
   Text,
   useDisclosure,
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
-  ModalFooter,
   ModalBody,
   ModalCloseButton,
   Accordion,
@@ -19,20 +16,15 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
-} from "@chakra-ui/react";
-import style from "../styles/Profile.module.css";
+} from '@chakra-ui/react';
+import style from '../styles/Profile.module.css';
 
 export const Profile = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <Box>
-      <Grid
-        h="200px"
-        templateRows="repeat(5, 1fr)"
-        templateColumns="repeat(2, 1fr)"
-        gap={4}
-      >
+      <Grid h="200px" templateRows="repeat(5, 1fr)" templateColumns="repeat(2, 1fr)" gap={4}>
         <GridItem rowSpan={1} colSpan={1}>
           <Text>名前</Text>
         </GridItem>
@@ -62,7 +54,7 @@ export const Profile = () => {
         <Accordion defaultIndex={[0]} allowMultiple>
           <AccordionItem>
             <h2>
-              <AccordionButton _focus={{ _focus: "none" }}>
+              <AccordionButton _focus={{ _focus: 'none' }}>
                 <Box flex="1" textAlign="left">
                   経歴
                 </Box>
@@ -83,7 +75,7 @@ export const Profile = () => {
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <ModalCloseButton _focus={{ _focus: "none" }} />
+          <ModalCloseButton _focus={{ _focus: 'none' }} />
           <ModalBody>aaaa</ModalBody>
         </ModalContent>
       </Modal>

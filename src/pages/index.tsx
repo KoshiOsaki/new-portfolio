@@ -1,13 +1,13 @@
-import { Box, Flex, HStack, Text } from "@chakra-ui/react";
-import type { NextPage } from "next";
-import { useState } from "react";
-import style from "../styles/home.module.css";
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
-import { Header } from "../components/Header";
-import { WorkCard } from "../components/WorkCard";
-import { Layout } from "../components/Layout";
-import { PhotoSlider } from "../components/PhotoSlider";
-import { Profile } from "../components/Profile";
+import { Box, Flex, HStack, Text } from '@chakra-ui/react';
+import type { NextPage } from 'next';
+import { useState } from 'react';
+import style from '../styles/home.module.css';
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
+import { Header } from '../components/Header';
+import { WorkCard } from '../components/WorkCard';
+import { Layout } from '../components/Layout';
+import { PhotoSlider } from '../components/PhotoSlider';
+import { Profile } from '../components/Profile';
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
@@ -32,12 +32,12 @@ const Home: NextPage = () => {
             <Box p="4">
               <Tabs isFitted variant="enclosed">
                 <TabList mb="1em">
-                  <Tab _focus={{ _focus: "none" }}>WORKS</Tab>
-                  <Tab _focus={{ _focus: "none" }}>ABOUT</Tab>
+                  <Tab _focus={{ _focus: 'none' }}>WORKS</Tab>
+                  <Tab _focus={{ _focus: 'none' }}>ABOUT</Tab>
                 </TabList>
                 <TabPanels>
                   <TabPanel>
-                    <Flex wrap="wrap">
+                    <Flex wrap="wrap" p="10">
                       <WorkCard
                         title="株式会社FUTUREWOODS サービスページ"
                         img="/futuresearch.png"
@@ -73,13 +73,7 @@ const Home: NextPage = () => {
                           リンク先は閲覧専用ページ。
                         </Text>
                       </WorkCard>
-                      <WorkCard
-                        title="自動出校bot"
-                        img="/syukkou.png"
-                        link=""
-                        skill="Node.js, Puppeteer"
-                        role="すべて"
-                      >
+                      <WorkCard title="自動出校bot" img="/syukkou.png" link="" skill="Node.js, Puppeteer" role="すべて">
                         <Text>
                           研究室の出校フォーム入力が面倒なので制作。インターンでスクレイピングに使用していたPuppeteerを用いた。日付、時間を自動入力してくれる。
                         </Text>
