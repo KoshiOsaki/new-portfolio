@@ -18,24 +18,29 @@ import {
   AccordionIcon,
   Flex,
   Stack,
+  List,
 } from '@chakra-ui/react';
+import { useState } from 'react';
 import style from '../styles/Profile.module.css';
 
 export const Profile = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box w="80%">
+    <>
+      <Text fontWeight="bold" fontSize="3xl" mb="3" ml="2" mt="4">
+        Profile
+      </Text>
       <Stack>
-        <Flex>
+        <Flex fontSize="lg">
           <Text w="30%">名前</Text>
           <Text w="70%">大崎 向士</Text>
         </Flex>
-        <Flex>
+        <Flex fontSize="lg">
           <Text w="30%">所属</Text>
           <Text w="70%">東京工業大学大学院 生命理工学コース</Text>
         </Flex>
-        <Flex>
+        <Flex fontSize="lg">
           <Text w="30%">研究室</Text>
           <Text w="70%">
             <Link href="http://www.neobio.bio.titech.ac.jp/ja/" target="_blank">
@@ -44,33 +49,42 @@ export const Profile = () => {
             (タンパク質工学)
           </Text>
         </Flex>
-        <Flex>
+        <Flex fontSize="lg">
           <Text w="30%">趣味</Text>
           <Text w="70%">バイク、サッカー、音楽を聴くこと</Text>
         </Flex>
       </Stack>
-      <Box>
-        <Accordion defaultIndex={[0]} allowMultiple reduceMotion={false}>
-          <AccordionItem>
-            <h2>
-              <AccordionButton _focus={{ _focus: 'none' }}>
-                <Box flex="1" textAlign="left">
-                  経歴
-                </Box>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel pb={4}>2015年 神奈川県立横浜翠嵐高等学校 入学</AccordionPanel>
-            <AccordionPanel pb={4}>2018年 東京工業大学 生命理工学系 入学</AccordionPanel>
-            <AccordionPanel pb={4}>2021年7月〜現在 株式会社FUTUREWOODS 長期インターン</AccordionPanel>
-            <AccordionPanel pb={4}>2022年 東京工業大学大学院 生命理工学コース 入学</AccordionPanel>
-            <AccordionPanel pb={4}>2022年5月 株式会社ワンキャリア 2Daysインターン</AccordionPanel>
-          </AccordionItem>
-        </Accordion>
-      </Box>
-      <Box>
-        <Button onClick={onOpen}>自己紹介スライド(2022年4月作製)</Button>
-      </Box>
+      <Flex fontSize="lg" mt="6">
+        <Text w="30%" fontWeight="semibold">
+          Github
+        </Text>
+        <Link href="https://github.com/KoshiOsaki" target="_blank">
+          https://github.com/KoshiOsaki
+        </Link>
+      </Flex>
+      <Accordion defaultIndex={[1]} allowMultiple reduceMotion={false} w="500px" top="400px" mt="2">
+        <AccordionItem>
+          <h2>
+            <AccordionButton _focus={{ _focus: 'none' }} w="500px" position="absolute" className={style.button}>
+              <Box flex="1" textAlign="left">
+                経歴
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <Box position="relative" mt="40px" border="1px" borderColor="gray.300">
+            <AccordionPanel pb={2}>2015年 　　神奈川県立横浜翠嵐高等学校 入学</AccordionPanel>
+            <AccordionPanel pb={2}>2018年 　　東京工業大学 生命理工学系 入学</AccordionPanel>
+            <AccordionPanel pb={2}>2021年7月〜現在　株式会社FUTUREWOODS 長期インターン</AccordionPanel>
+            <AccordionPanel pb={2}>2022年 　　東京工業大学大学院 生命理工学コース 入学</AccordionPanel>
+            <AccordionPanel pb={2}>2022年5月　株式会社ワンキャリア 2Daysインターン</AccordionPanel>
+          </Box>
+        </AccordionItem>
+      </Accordion>
+      <Text onClick={onOpen} className={style.button} px="2" py="2" display="inline-block" rounded="lg" mt="3" w="500px">
+        ビジョンプレゼン (2022年4月作製)
+      </Text>
+
       <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose} isCentered size="5xl">
         <ModalOverlay />
         <ModalContent h="700px">
@@ -80,6 +94,6 @@ export const Profile = () => {
           </ModalBody>
         </ModalContent>
       </Modal>
-    </Box>
+    </>
   );
 };

@@ -4,27 +4,18 @@ import style from '../styles/PhotoSlider.module.css';
 
 export const PhotoSlider = () => {
   return (
-    <Box position="relative" w="330px">
-      <Flex overflowX="scroll" className={style.main} id="swiper">
+    <Box position="relative" w="430px">
+      <Flex overflowX="hidden" className={style.main} id="swiper">
         <Box minWidth="430px">
-          <Img src="/koshi.jpg" w="300px"></Img>
+          <Img src="/koshi.jpg" w="430px" userSelect="none"></Img>
         </Box>
         <Box minWidth="430px">
-          <Img src="/bike.jpg" w="300px"></Img>
+          <Img src="/bike.jpg" w="430px" userSelect="none" pt="45px"></Img>
         </Box>
         <Box minWidth="430px">
-          <Img src="/baccano.jpg" w="300px"></Img>
+          <Img src="/baccano.jpg" w="430px" userSelect="none" pt="35px"></Img>
         </Box>
       </Flex>
-      <Box
-        className={style.arrow_left}
-        onClick={() => {
-          const elm = document.getElementById('swiper');
-          elm && elm.scroll(elm.scrollLeft - 430, 260);
-        }}
-      >
-        <Icon></Icon>
-      </Box>
 
       <div
         className={style.arrow_left}

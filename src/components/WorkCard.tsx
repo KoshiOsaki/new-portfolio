@@ -29,7 +29,7 @@ export const WorkCard = ({ title, img, link, skill, role, description, children 
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Box w="400px" h="330px" mx="4" my="9" onClick={onOpen} className={style.shake} p="2">
+      <Box w={{ sm: '280px', md: '320px', lg: '400px' }} h="330px" mx="5" my="9" onClick={onOpen} className={style.shake} p="2">
         <Text textAlign="center" fontWeight="bold">
           {title}
         </Text>
@@ -48,20 +48,20 @@ export const WorkCard = ({ title, img, link, skill, role, description, children 
             <Text fontSize="sm" textColor="gray.600" textAlign="center">
               {description}
             </Text>
-            {link == 'gif' ? (
-              <>
-                <Box w="70%" overflow="hidden" mx="auto">
-                  <Img src="/syukkou.gif" w="100%" mx="auto" />
-                </Box>
-              </>
+            {link == 'none' ? (
+              <Box w="70%" overflow="hidden" mx="auto">
+                <Img src={img} w="100%" mx="auto" />
+              </Box>
+            ) : link == 'gif' ? (
+              <Box w="70%" overflow="hidden" mx="auto">
+                <Img src="/syukkou.gif" w="100%" mx="auto" />
+              </Box>
             ) : (
-              <>
-                <Link href={link} target="_blank">
-                  <Box w="80%" overflow="hidden" mx="auto" border="1px" borderColor="gray.300">
-                    <Img src={img} w="100%" mx="auto" my="6" className={style.image} />
-                  </Box>
-                </Link>
-              </>
+              <Link href={link} target="_blank">
+                <Box w="80%" overflow="hidden" mx="auto" border="1px" borderColor="gray.300">
+                  <Img src={img} w="100%" mx="auto" my="6" className={style.image} />
+                </Box>
+              </Link>
             )}
 
             <Flex my="3" px="20">

@@ -29,6 +29,18 @@ export const WorkCardList = () => {
         </Text>
       </WorkCard>
       <WorkCard
+        title="株式会社FUTUREWOODS 業務用ダッシュボード"
+        img="/fs-admin.png"
+        link="none"
+        skill="Nest.js, Next.js, MySQL"
+        role="フロント開発、バックエンド開発(追加機能の実装、コードの整形)"
+        description="非公開です"
+      >
+        <Text>
+          株式会社FUTUREWOODSの長期インターンにて、先輩から引き継ぎ、運用している業務用ダッシュボード。フロントをMUIを用いたデザインにリニューアルした後、バックエンドをexpressからNest.jsに移行・整形した。通知機能や新たなソート等の機能を適宜追加している。
+        </Text>
+      </WorkCard>
+      <WorkCard
         title="Cell Festival"
         img="/cellfestival.png"
         link="https://cell-festival.vercel.app/"

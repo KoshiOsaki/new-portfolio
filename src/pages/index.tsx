@@ -81,18 +81,20 @@ const Home: NextPage = () => {
             </TabList>
             <TabPanels className={style.tabPanel}>
               <TabPanel>
-                <Flex wrap="wrap" px="5" justify="center" pt="20">
+                <Flex wrap="wrap" px={{ sm: 2, md: 4, lg: 16 }} justify="center" pt="20">
                   <WorkCardList />
                 </Flex>
               </TabPanel>
               <TabPanel>
-                <HStack pt="20" px="100px">
-                  <Box w="40%">
+                <Flex pt="28" justify="center" wrap="wrap">
+                  <Box w="500px">
                     <PhotoSlider />
                   </Box>
-                  <Profile />
-                </HStack>
-                <Box px="32" py="16">
+                  <Box w="600px">
+                    <Profile />
+                  </Box>
+                </Flex>
+                <Box py="16">
                   <SkillList />
                 </Box>
               </TabPanel>

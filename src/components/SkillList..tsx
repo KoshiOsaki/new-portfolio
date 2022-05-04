@@ -4,7 +4,7 @@ import { SkillColumn } from './SkillColumn';
 export const SkillList = () => {
   return (
     <>
-      <Text fontWeight="bold" fontSize="2xl" textAlign="center">
+      <Text fontWeight="bold" fontSize="3xl" textAlign="center" mb="10">
         Skills
       </Text>
       <Stack>
