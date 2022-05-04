@@ -6,18 +6,15 @@ import { Props } from 'framer-motion/types/types';
 
 export const Layout: FC<Props> = ({ children }) => {
   return (
-    <Box position="relative" overflow="hidden" pb="800px">
+    <Box position="relative" overflow="hidden" pb="400px">
       <Header />
-      <Box pt="200px">{children}</Box>
-
+      <Box pt="142px">{children}</Box>
       <>
         <div className={style.circle1} />
         <div className={style.circle2} />
       </>
-
       <div className={style.circle3} />
       <div className={style.circle4} />
-
       <div
         style={{
           position: 'absolute',
@@ -30,10 +27,8 @@ export const Layout: FC<Props> = ({ children }) => {
           background: 'radial-gradient(circle farthest-side, #4de189, transparent)',
         }}
       />
-
       <div className={style.circle7} />
       <div className={style.circle8} />
-      <div className={style.circle9} />
     </Box>
   );
 };

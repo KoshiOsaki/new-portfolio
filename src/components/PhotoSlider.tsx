@@ -1,5 +1,6 @@
-import { Box, Flex, Icon, Img } from "@chakra-ui/react";
-import style from "../styles/PhotoSlider.module.css";
+import { ArrowBackIcon, ArrowForwardIcon } from '@chakra-ui/icons';
+import { Box, Flex, Icon, Img } from '@chakra-ui/react';
+import style from '../styles/PhotoSlider.module.css';
 
 export const PhotoSlider = () => {
   return (
@@ -18,7 +19,7 @@ export const PhotoSlider = () => {
       <Box
         className={style.arrow_left}
         onClick={() => {
-          const elm = document.getElementById("swiper");
+          const elm = document.getElementById('swiper');
           elm && elm.scroll(elm.scrollLeft - 430, 260);
         }}
       >
@@ -28,24 +29,20 @@ export const PhotoSlider = () => {
       <div
         className={style.arrow_left}
         onClick={() => {
-          const elm = document.getElementById("swiper");
+          const elm = document.getElementById('swiper');
           elm && elm.scroll(elm.scrollLeft - 430, 260);
         }}
       >
-        <span className="material-icons align-middle text-gray-600">
-          arrow_back
-        </span>
+        <ArrowBackIcon />
       </div>
       <div
         className={style.arrow_right}
         onClick={() => {
-          const elm = document.getElementById("swiper");
+          const elm = document.getElementById('swiper');
           elm && elm.scroll(elm.scrollLeft + 430, 260);
         }}
       >
-        <span className="material-icons align-middle text-gray-600">
-          arrow_forward
-        </span>
+        <ArrowForwardIcon />
       </div>
     </Box>
   );

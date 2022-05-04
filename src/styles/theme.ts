@@ -1,18 +1,25 @@
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme } from '@chakra-ui/react';
 
 const theme = extendTheme({
   styles: {
     global: {
       body: {
-        color: "gray.800",
+        color: 'gray.800',
       },
     },
   },
   components: {
+    Link: {
+      baseStyle: {
+        _focus: {
+          boxShadow: '0px 0px 0px 2px #色の指定',
+        },
+      },
+    },
     Button: {
       baseStyle: {
         _focus: {
-          boxShadow: "0px 0px 0px 2px #色の指定",
+          boxShadow: '0px 0px 0px 2px #色の指定',
         },
       },
     },
@@ -20,7 +27,7 @@ const theme = extendTheme({
       baseStyle: {
         control: {
           _focus: {
-            boxShadow: "0px 0px 0px 3px #色の指定",
+            boxShadow: '0px 0px 0px 3px #色の指定',
           },
         },
       },
@@ -29,7 +36,7 @@ const theme = extendTheme({
       baseStyle: {
         control: {
           _focus: {
-            boxShadow: "0px 0px 0px 3px #色の指定",
+            boxShadow: '0px 0px 0px 3px #色の指定',
           },
         },
       },

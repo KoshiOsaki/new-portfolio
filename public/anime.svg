@@ -1,0 +1,42 @@
+<svg width="600" height="150" viewBox="0 0 600 150" fill="none" 
+    xmlns="http://www.w3.org/2000/svg">
+    <defs>
+    <style>
+      text {
+          font-size: 100px;
+  stroke: #333;
+  stroke-width: 0.5px;
+  fill: #333;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: textAnime 3s linear;
+   font-family: 'Volkhov', serif;
+   font-style: italic;
+}
+
+
+
+
+
+
+
+@keyframes textAnime {
+  0% {
+    stroke-dashoffset: 600;
+    fill:transparent;
+  }
+  50% {
+    fill:transparent;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill:#333;
+  }
+}
+    </style>
+  </defs>
+  <text x="0" y="0"  stroke="black" text-anchor="start"  stroke-width="0.5" >Koshi&apos;s</text>
+  <text x="0" y="110" stroke="black" text-anchor="start" stroke-width="0.5" >Portfolio</text>
+
+
+</svg>

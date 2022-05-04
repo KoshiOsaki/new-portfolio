@@ -1,12 +1,12 @@
 .shake:hover {
-  animation: shake 0.9s linear;
+  animation: shake 0.7s linear;
 }
 @keyframes shake {
   0% {
-    transform: translate(3px, 5px);
+    transform: translate(2px, 4px);
   }
   5% {
-    transform: translate(8px, -5px);
+    transform: translate(6px, -3px);
   }
   10% {
     transform: translate(-3px, 2px);
@@ -44,4 +44,23 @@
     100% {
       transform: translate(7px, 6px);
     } */
+}
+.shake {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid white;
+}
+
+.modal {
+  transform: scale(0.3);
+  transition: 0.5s;
+}
+
+.image {
+  overflow: hidden;
+}
+.image:hover {
+  transform: scale(1.1, 1.1);
+  transition: 1s all;
 }
