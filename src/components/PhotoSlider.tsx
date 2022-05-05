@@ -6,7 +6,7 @@ import style from '../styles/PhotoSlider.module.css';
 
 export const PhotoSlider = () => {
   const { width, height } = useWindowDimensions();
-  const [mobile, setMobile] = useState(width <= 990 ? 380 : 430);
+  const [mobile, setMobile] = useState(width <= 480 ? 380 : 430);
 
   return (
     <Box position="relative" w={{ base: '380px', sm: '430px' }} mx="auto">

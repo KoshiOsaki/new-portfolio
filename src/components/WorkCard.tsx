@@ -39,7 +39,7 @@ export const WorkCard = ({ title, img, link, skill, role, description, children 
       </Box>
       <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose} isCentered size="4xl">
         <ModalOverlay />
-        <ModalContent h="650px" className={style.modal}>
+        <ModalContent h="650px" className={style.modal} overflow="scroll">
           <ModalCloseButton _focus={{ _focus: 'none' }} />
           <ModalBody py="7" px={{ base: '1', md: '10' }}>
             <Text fontWeight="bold" fontSize="xl" mb="3">

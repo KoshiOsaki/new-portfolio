@@ -46,7 +46,7 @@ export const WorkCardList = () => {
         link="https://cell-festival.vercel.app/"
         skill="Next.js, TypeScript, React, Firebase"
         role="フロント開発、記事の校閲、追加機能の考案"
-        description=""
+        description="制作中です。。"
       >
         <Text>
           生物系の学習プラットフォーム制作を目指す学生団体Cell
@@ -59,7 +59,7 @@ export const WorkCardList = () => {
         link="https://reborn-to-teradaranze.vercel.app/"
         skill="Next.js, TypeScript, Flask, OpenCV, Tensorflow"
         role="全体の進捗管理、フロント開発、プレゼン"
-        description=""
+        description="製作中です。。"
       >
         <Text>
           2Daysのハッカソンにてチーム4人で共同開発した、理想の芸能人と顔を比較してくれるサイト。顔を公正に評価することは難しいが、理想の顔との差なら分かるのではと思い制作。動きのあるUIと、初心者にも分かりやすいコード記法を意識した。
