@@ -6,7 +6,7 @@ import { Props } from 'framer-motion/types/types';
 
 export const Layout: FC<Props> = ({ children }) => {
   return (
-    <Box position="relative" overflow="hidden" pb="400px">
+    <Box position="relative" overflow="hidden" pb="100px">
       <Header />
       <Box pt="142px">{children}</Box>
       <>

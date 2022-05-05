@@ -7,7 +7,7 @@
     position: absolute;
     color: white;
     z-index: 2;
-    top: 105px;
+    top: 220px;
     left: 0;
     width: 50px;
     height: 50px;
@@ -24,7 +24,7 @@
     position: absolute;
     color: white;
     z-index: 2;
-    top: 105px;
+    top: 220px;
     right: 0;
     width: 50px;
     height: 50px;
@@ -50,7 +50,6 @@
 
 @media (max-width: 1024px) {
   .main {
-    padding: 0 5.5%;
     scroll-behavior: smooth;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -59,7 +58,7 @@
     position: absolute;
     color: white;
     z-index: 2;
-    top: 105px;
+    top: 220px;
     left: 0%;
     width: 50px;
     height: 50px;
@@ -76,7 +75,7 @@
     position: absolute;
     color: white;
     z-index: 2;
-    top: 105px;
+    top: 220px;
     right: 0%;
     width: 50px;
     height: 50px;

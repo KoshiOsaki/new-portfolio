@@ -62,10 +62,10 @@ export const Profile = () => {
           https://github.com/KoshiOsaki
         </Link>
       </Flex>
-      <Accordion defaultIndex={[1]} allowMultiple reduceMotion={false} w="500px" top="400px" mt="2">
+      <Accordion defaultIndex={[1]} allowMultiple reduceMotion={false} w={{ base: '340px', sm: '500px' }} top="400px" mt="2">
         <AccordionItem>
           <h2>
-            <AccordionButton _focus={{ _focus: 'none' }} w="500px" position="absolute" className={style.button}>
+            <AccordionButton _focus={{ _focus: 'none' }} w={{ base: '340px', sm: '500px' }} position="absolute" className={style.button}>
               <Box flex="1" textAlign="left">
                 経歴
               </Box>
@@ -81,13 +81,13 @@ export const Profile = () => {
           </Box>
         </AccordionItem>
       </Accordion>
-      <Text onClick={onOpen} className={style.button} px="2" py="2" display="inline-block" rounded="lg" mt="3" w="500px">
+      <Text onClick={onOpen} className={style.button} px="2" py="2" display="inline-block" rounded="lg" mt="3" w={{ base: '340px', sm: '500px' }}>
         ビジョンプレゼン (2022年4月作製)
       </Text>
 
       <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose} isCentered size="5xl">
         <ModalOverlay />
-        <ModalContent h="700px">
+        <ModalContent h="900px" py="8">
           <ModalCloseButton _focus={{ _focus: 'none' }} />
           <ModalBody>
             <iframe src="/koshiosaki.pdf" width="100%" height="100%"></iframe>

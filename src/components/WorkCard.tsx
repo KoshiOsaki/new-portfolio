@@ -37,11 +37,11 @@ export const WorkCard = ({ title, img, link, skill, role, description, children 
           <Img src={img} borderRadius="lg" />
         </Center>
       </Box>
-      <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose} isCentered size="5xl">
+      <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose} isCentered size="4xl">
         <ModalOverlay />
-        <ModalContent w="900px" h="700px" className={style.modal}>
+        <ModalContent h="650px" className={style.modal}>
           <ModalCloseButton _focus={{ _focus: 'none' }} />
-          <ModalBody py="7" px="10">
+          <ModalBody py="7" px={{ base: '1', md: '10' }}>
             <Text fontWeight="bold" fontSize="xl" mb="3">
               {title}
             </Text>
@@ -58,7 +58,7 @@ export const WorkCard = ({ title, img, link, skill, role, description, children 
               </Box>
             ) : (
               <Link href={link} target="_blank">
-                <Box w="80%" overflow="hidden" mx="auto" border="1px" borderColor="gray.300">
+                <Box w="70%" overflow="hidden" mx="auto" border="1px" borderColor="gray.300">
                   <Img src={img} w="100%" mx="auto" my="6" className={style.image} />
                 </Box>
               </Link>

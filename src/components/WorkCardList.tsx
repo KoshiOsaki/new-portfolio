@@ -96,9 +96,6 @@ export const WorkCardList = () => {
           GoogleForm自動入力bot。研究室の出校フォーム入力が面倒なので制作した。インターンでスクレイピングに使用していたPuppeteerを用いており、日付・時間を自動入力してくれる。
         </Text>
       </WorkCard>
-
-      <Box w="400px" h="330px" mx="4" my="9" p="2"></Box>
-      <Box w="400px" h="330px" mx="4" my="9" p="2"></Box>
     </>
   );
 };

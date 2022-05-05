@@ -29,11 +29,13 @@ export const SkillColumn = ({ name, level }: Props) => {
   };
 
   return (
-    <Flex justify="center">
-      <Text w="30%" pt="2">
+    <Flex justify="center" maxWidth="1000px" mt="2">
+      <Text w={{ base: '20%', sm: '30%' }} maxWidth="300px" pt="2">
         {name}
       </Text>
-      <Flex w="50%">{skillStar(level)}</Flex>
+      <Flex w={{ base: '70%', sm: '50%' }} maxWidth="700px">
+        {skillStar(level)}
+      </Flex>
     </Flex>
   );
 };
