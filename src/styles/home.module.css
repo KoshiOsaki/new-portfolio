@@ -17,7 +17,7 @@
   background-color: #fff;
   border-radius: 100%;
   margin: -300px -300px -300px -300px;
-  animation: sk-scaleout 3s infinite ease-in-out;
+  animation: sk-scaleout 4s infinite ease-in-out;
 }
 /* ローディングアニメーション */
 @keyframes sk-scaleout {
