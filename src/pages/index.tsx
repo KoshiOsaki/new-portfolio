@@ -17,10 +17,10 @@ const Home: NextPage = () => {
   const [isOpen, setIsOpen] = useState(true);
   setTimeout(() => {
     setIsOpen(false);
-  }, 3000);
+  }, 4000);
   setTimeout(() => {
     setLoading(false);
-  }, 5000);
+  }, 6000);
 
   return (
     <>
