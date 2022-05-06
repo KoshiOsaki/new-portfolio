@@ -29,12 +29,51 @@ export const SkillColumn = ({ name, level }: Props) => {
   };
 
   return (
-    <Flex justify="center" maxWidth="1000px" mt="2">
-      <Text w={{ base: '20%', sm: '30%' }} maxWidth="300px" pt="2">
+    <Flex justify="center" maxWidth="1000px" mt="6">
+      <Text w={{ base: '20%', sm: '30%' }} fontSize={{ base: 'xs', sm: 'md' }} maxWidth="300px" pt="2">
         {name}
       </Text>
       <Flex w={{ base: '70%', sm: '50%' }} maxWidth="700px">
-        {skillStar(level)}
+        {level == 3 ? (
+          <>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400" borderStartRadius="xl"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="gray.100" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="gray.100" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="gray.100" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="gray.100" borderEndRadius="xl"></Box>
+          </>
+        ) : level == 4 ? (
+          <>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400" borderStartRadius="xl"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="gray.100" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="gray.100" borderEndRadius="xl"></Box>
+          </>
+        ) : (
+          <>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400" borderStartRadius="xl"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderRight="1px solid" borderColor="gray.400"></Box>
+            <Box w="100px" h="40px" bgColor="orange" borderEndRadius="xl"></Box>
+          </>
+        )}
       </Flex>
     </Flex>
   );

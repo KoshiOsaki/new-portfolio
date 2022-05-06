@@ -33,15 +33,15 @@ export const Profile = () => {
         Profile
       </Text>
       <Stack>
-        <Flex fontSize="lg">
+        <Flex fontSize={{ base: 'md', md: 'lg' }}>
           <Text w="30%">名前</Text>
           <Text w="70%">大崎 向士</Text>
         </Flex>
-        <Flex fontSize="lg">
+        <Flex fontSize={{ base: 'md', md: 'lg' }}>
           <Text w="30%">所属</Text>
           <Text w="70%">東京工業大学大学院 生命理工学コース</Text>
         </Flex>
-        <Flex fontSize="lg">
+        <Flex fontSize={{ base: 'md', md: 'lg' }}>
           <Text w="30%">研究室</Text>
           <Text w="70%">
             <Link href="http://www.neobio.bio.titech.ac.jp/ja/" target="_blank">
@@ -50,12 +50,12 @@ export const Profile = () => {
             (タンパク質工学)
           </Text>
         </Flex>
-        <Flex fontSize="lg">
+        <Flex fontSize={{ base: 'md', md: 'lg' }}>
           <Text w="30%">趣味</Text>
           <Text w="70%">バイク、サッカー、音楽を聴くこと</Text>
         </Flex>
       </Stack>
-      <Flex fontSize="lg" mt="6">
+      <Flex fontSize={{ base: 'md', md: 'lg' }} mt="6">
         <Text w="30%" fontWeight="semibold">
           Github
         </Text>

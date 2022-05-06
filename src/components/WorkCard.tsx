@@ -45,7 +45,7 @@ export const WorkCard = ({ title, img, link, skill, role, description, children 
             <Text fontWeight="bold" fontSize="xl" mb="3">
               {title}
             </Text>
-            <Text fontSize="sm" textColor="gray.600" textAlign="center">
+            <Text fontSize="sm" textColor="gray.700" textAlign="center">
               {description}
             </Text>
             {link == 'none' ? (
@@ -59,26 +59,49 @@ export const WorkCard = ({ title, img, link, skill, role, description, children 
             ) : (
               <Link href={link} target="_blank">
                 <Box w="70%" overflow="hidden" mx="auto" border="1px" borderColor="gray.300">
-                  <Img src={img} w="100%" mx="auto" my="6" className={style.image} />
+                  <Img src={img} w="100%" mx="auto" className={style.image} />
                 </Box>
               </Link>
             )}
 
-            <Flex my="3" px="20">
+            <Flex mt="3" mb="6" px="20">
               <Box w="50%">
-                <Badge p="1" colorScheme="cyan">
+                <Box
+                  display="inline-block"
+                  px="1"
+                  fontSize="xs"
+                  fontWeight="semibold"
+                  rounded="sm"
+                  className={style.badge_ora}
+                  m="1"
+                  textColor="orange.800"
+                  boxShadow="0 0 3px 3px rgba(0, 0, 0, 0.1)"
+                >
                   使用技術
-                </Badge>
+                </Box>
+
                 <Text fontSize="sm">{skill}</Text>
               </Box>
               <Box w="50%">
-                <Badge py="1" px="2" colorScheme="green">
+                <Box
+                  display="inline-block"
+                  px="1"
+                  fontSize="xs"
+                  fontWeight="semibold"
+                  rounded="sm"
+                  className={style.badge_pi}
+                  m="1"
+                  textColor="pink.800"
+                  boxShadow="0 0 3px 3px rgba(0, 0, 0, 0.1)"
+                >
                   担当
-                </Badge>
+                </Box>
                 <Text fontSize="sm">{role}</Text>
               </Box>
             </Flex>
-            <Box px="20">{children}</Box>
+            <Box mx="20" letterSpacing="wide">
+              {children}
+            </Box>
           </ModalBody>
         </ModalContent>
       </Modal>

@@ -53,8 +53,10 @@
 }
 
 .modal {
+  background-color: rgba(255, 255, 255, 0.796) !important;
+  backdrop-filter: blur(20px) !important;
   transform: scale(0.3);
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 .image {
@@ -63,4 +65,16 @@
 .image:hover {
   transform: scale(1.1, 1.1);
   transition: 1s all;
+}
+
+.badge_ora {
+  background-color: rgba(245, 186, 124, 0.3);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgb(230, 202, 132);
+}
+
+.badge_pi {
+  background-color: rgba(241, 151, 241, 0.3);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(194, 141, 190, 0.701);
 }
