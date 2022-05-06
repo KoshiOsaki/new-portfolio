@@ -38,7 +38,11 @@ const Home: NextPage = () => {
             </Box>
             {/* mobile */}
             <Box zIndex="1000" left="50%" top="50%" position="fixed" display={{ base: 'block', sm: 'none' }}>
-              <video src="/title.mp4" muted autoPlay className={style.anime} />
+              <Text className={style.title} fontSize="4xl">
+                Koshi&apos;s
+                <br />
+                Portfolio
+              </Text>
             </Box>
             <div className={style.loading}>
               <div className={style.spinner}></div>

@@ -37,6 +37,11 @@
   height: 90%;
   object-fit: cover;
 }
+.title {
+  font-family: 'Volkhov', serif;
+  font-style: italic;
+  transform: translate(-50%, -50%);
+}
 
 .tabPanel {
   backdrop-filter: blur(3px);
