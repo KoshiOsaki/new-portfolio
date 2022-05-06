@@ -92,7 +92,7 @@ const Home: NextPage = () => {
               </TabPanel>
               <TabPanel>
                 <Flex pt="28" justify="center" wrap="wrap">
-                  <Box w={{ base: '380px', sm: '500px' }}>
+                  <Box w={{ base: '380px', sm: '600px' }}>
                     <PhotoSlider />
                   </Box>
                   <Box w={{ base: '96%', sm: '600px' }}>

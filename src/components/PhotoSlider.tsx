@@ -5,8 +5,6 @@ import { useWindowDimensions } from '../hooks/useWindowDimensions';
 import style from '../styles/PhotoSlider.module.css';
 
 export const PhotoSlider = () => {
-  const { width, height } = useWindowDimensions();
-  const [mobile, setMobile] = useState(width <= 480 ? 380 : 430);
   const [photo, setPhoto] = useState(30);
 
   const onClickSlide = (isForword: boolean) => {
