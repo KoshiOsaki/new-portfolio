@@ -26,8 +26,6 @@ import style from '../styles/Profile.module.css';
 
 export const Profile = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const { width, height } = useWindowDimensions();
-  const [mobile, setMobile] = useState(width <= 550 ? true : false);
 
   return (
     <>
@@ -84,25 +82,32 @@ export const Profile = () => {
           </Box>
         </AccordionItem>
       </Accordion>
-      {mobile ? (
-        <Link
-          href="https://drive.google.com/file/d/1xfkNZi3GxRcpar_To-fQ8hvIaLLyUsN_/view?usp=sharing"
-          target="_blank"
-          className={style.button}
-          px="2"
-          py="2"
-          display="inline-block"
-          rounded="lg"
-          mt="3"
-          w={{ base: '340px', sm: '500px' }}
-        >
-          ビジョンプレゼン (2022年4月作製)
-        </Link>
-      ) : (
-        <Text onClick={onOpen} className={style.button} px="2" py="2" display="inline-block" rounded="lg" mt="3" w={{ base: '340px', sm: '500px' }}>
-          ビジョンプレゼン (2022年4月作製)
-        </Text>
-      )}
+      <Text
+        onClick={onOpen}
+        className={style.button}
+        px="2"
+        py="2"
+        display={{ base: 'none', sm: 'inline-block' }}
+        rounded="lg"
+        mt="3"
+        w={{ base: '340px', sm: '500px' }}
+      >
+        ビジョンプレゼン (2022年4月作製)
+      </Text>
+      {/* mobile */}
+      <Link
+        href="https://drive.google.com/file/d/1xfkNZi3GxRcpar_To-fQ8hvIaLLyUsN_/view?usp=sharing"
+        target="_blank"
+        className={style.button}
+        px="2"
+        py="2"
+        display={{ base: 'inline-block', sm: 'none' }}
+        rounded="lg"
+        mt="3"
+        w={{ base: '340px', sm: '500px' }}
+      >
+        ビジョンプレゼン (2022年4月作製)
+      </Link>
 
       <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose} isCentered size="5xl">
         <ModalOverlay />

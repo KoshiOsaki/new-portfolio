@@ -33,8 +33,12 @@ const Home: NextPage = () => {
               width: isOpen ? '60vw' : 0,
             }}
           >
-            <Box zIndex="1000" left="50%" top="50%" position="fixed">
+            <Box zIndex="1000" left="50%" top="50%" position="fixed" display={{ base: 'none', sm: 'block' }}>
               <video src="/title.mov" muted autoPlay className={style.anime} />
+            </Box>
+            {/* mobile */}
+            <Box zIndex="1000" left="50%" top="50%" position="fixed" display={{ base: 'block', sm: 'none' }}>
+              <video src="/title.mp4" muted autoPlay className={style.anime} />
             </Box>
             <div className={style.loading}>
               <div className={style.spinner}></div>
