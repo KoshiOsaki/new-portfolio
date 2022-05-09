@@ -54,7 +54,8 @@ export const WorkCardList = () => {
         </Text>
       </WorkCard>
       <WorkCard
-        title="Reborn To 寺田蘭世"
+        id="terada"
+        title="Reborn to 寺田蘭世"
         img="/terada.png"
         link="https://reborn-to-teradaranze.vercel.app/"
         skill="Next.js, TypeScript, Flask, OpenCV, Tensorflow"
@@ -68,6 +69,7 @@ export const WorkCardList = () => {
         </Text>
       </WorkCard>
       <WorkCard
+        id="nosight"
         title="農Sightダッシュボード"
         img="/nosight.png"
         skill="Next.js, TypeScript, React, Firebase"
@@ -80,6 +82,7 @@ export const WorkCardList = () => {
         </Text>
       </WorkCard>
       <WorkCard
+        id="cocktail"
         title="カクテル検索くん"
         img="/search.png"
         link="https://marceaucocktail.vercel.app/cocktailread"

@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, useEffect } from 'react';
 import {
   Box,
   Text,
@@ -15,7 +15,9 @@ import {
   Flex,
 } from '@chakra-ui/react';
 import style from '../styles/WorkCard.module.css';
+import { useRouter } from 'next/router';
 interface Props {
+  id?: string;
   title: string;
   img: string;
   link: string;
@@ -25,8 +27,16 @@ interface Props {
   children: ReactNode;
 }
 
-export const WorkCard = ({ title, img, link, skill, role, description, children }: Props) => {
+export const WorkCard = ({ id, title, img, link, skill, role, description, children }: Props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const router = useRouter();
+  const fragment = router.asPath;
+  useEffect(() => {
+    if (fragment == `/#${id}`) {
+      onOpen();
+    }
+  }, []);
+
   return (
     <>
       <Box w={{ sm: '280px', md: '320px', lg: '400px' }} h="330px" mx="5" my="9" onClick={onOpen} className={style.shake} p="2">

@@ -63,16 +63,15 @@ export const Profile = () => {
           https://github.com/KoshiOsaki
         </Link>
       </Flex>
-      <Accordion defaultIndex={[1]} allowMultiple reduceMotion={false} w={{ base: '340px', sm: '500px' }} top="400px" mt="2">
+      <Accordion defaultIndex={[1]} allowMultiple reduceMotion={false} w={{ base: '340px', sm: '500px' }} mt="2">
         <AccordionItem>
-          <h2>
-            <AccordionButton _focus={{ _focus: 'none' }} w={{ base: '340px', sm: '500px' }} position="absolute" className={style.button}>
-              <Box flex="1" textAlign="left">
-                経歴
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-          </h2>
+          <AccordionButton _focus={{ _focus: 'none' }} w={{ base: '340px', sm: '500px' }} position="absolute" className={style.button}>
+            <Box flex="1" textAlign="left">
+              経歴
+            </Box>
+            <AccordionIcon />
+          </AccordionButton>
+
           <Box position="relative" mt="40px" border="1px" borderColor="gray.300">
             <AccordionPanel pb={2}>2015年 　　神奈川県立横浜翠嵐高等学校 入学</AccordionPanel>
             <AccordionPanel pb={2}>2018年 　　東京工業大学 生命理工学系 入学</AccordionPanel>
