@@ -47,7 +47,7 @@ export const Profile = () => {
             <Link href="http://www.neobio.bio.titech.ac.jp/ja/" target="_blank">
               小畠・三重研究室
             </Link>
-            (タンパク質工学)
+            　(タンパク質工学)
           </Text>
         </Flex>
         <Flex fontSize={{ base: 'md', md: 'lg' }}>

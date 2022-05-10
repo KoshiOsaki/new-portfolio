@@ -9,13 +9,13 @@ export const SkillList = () => {
       </Text>
 
       <Box textAlign="center" mx="auto">
-        <SkillColumn name="JavaScript/TypeScript" level={9} />
-        <SkillColumn name="React/Next.js" level={9} />
-        <SkillColumn name="Node.js" level={8} />
-        <SkillColumn name="Nest.js" level={7} />
-        <SkillColumn name="HTML/CSS" level={10} />
-        <SkillColumn name="Python" level={6} />
-        <SkillColumn name="SQL" level={5} />
+        <SkillColumn name="JavaScript/TypeScript" level={8} />
+        <SkillColumn name="React/Next.js" level={8} />
+        <SkillColumn name="Node.js" level={7} />
+        <SkillColumn name="Nest.js" level={6} />
+        <SkillColumn name="HTML/CSS" level={9} />
+        <SkillColumn name="Python" level={5} />
+        <SkillColumn name="SQL" level={4} />
         <SkillColumn name="Docker, Github" level={6} />
       </Box>
     </>
