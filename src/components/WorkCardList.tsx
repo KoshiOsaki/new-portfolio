@@ -1,4 +1,4 @@
-import { Box, Text } from '@chakra-ui/react';
+import { Box, Link, Text } from '@chakra-ui/react';
 import { WorkCard } from './WorkCard';
 
 export const WorkCardList = () => {
@@ -31,10 +31,10 @@ export const WorkCardList = () => {
       <WorkCard
         title="株式会社FUTUREWOODS 業務用ダッシュボード"
         img="/fs-admin.png"
-        link="none"
+        link="fs-admin"
         skill="Nest.js, Next.js, MySQL"
         role="フロント開発、バックエンド開発(追加機能の実装、コードの整形)"
-        description="非公開です"
+        description="デモ動画"
       >
         <Text>
           株式会社FUTUREWOODSの長期インターンにて、先輩から引き継ぎ、運用している業務用ダッシュボード。フロントをMUIを用いたデザインにリニューアルした後、バックエンドをexpressからNest.jsに移行・整形した。通知機能や新たなソート等の機能を適宜追加している。
@@ -73,12 +73,17 @@ export const WorkCardList = () => {
         title="農Sightダッシュボード"
         img="/nosight.png"
         skill="Next.js, TypeScript, React, Firebase"
-        link="https://expo.agrijournal.jp/booth/Sight/912071466345744720715/"
+        link="nosight"
         role="フロント開発、ヒアリング"
-        description="紹介ページに飛びます"
+        description="デモ動画"
       >
         <Text>
-          学生起業スタートアップの株式会社DOKOSOREにて開発をお手伝い。受注開発している農業DXサービスの業務用ダッシュボードを制作。チャット機能やデータのグラフ化等を実装。ユーザーがどういった機能を求めているかを聞きながら現在も改良中。
+          学生スタートアップの株式会社DOKOSOREにて開発をお手伝い。
+          受託開発している農業DXサービスの業務用ダッシュボードを制作。チャット機能やデータのグラフ化等を実装。ユーザーがどういった機能を求めているかを聞きながら現在も改良中。
+          <br />
+          <Link href="https://expo.agrijournal.jp/booth/Sight/912071466345744720715/" target="_blank" textColor="blue.600">
+            詳細はコチラ
+          </Link>
         </Text>
       </WorkCard>
       <WorkCard
@@ -94,7 +99,7 @@ export const WorkCardList = () => {
           業務用のカクテル検索ページ。バイト先のバーのレシピが多すぎること、オリジナルカクテルをバイトメンバーで共有したいと思ったことをきっかけに個人的に制作。材料名でも検索できるようにしたのが工夫した点。これから機能を追加していきたい。
         </Text>
       </WorkCard>
-      <WorkCard title="自動出校bot" img="/syukkou.png" link="gif" skill="Node.js, Puppeteer" role="すべて" description="デモ動画">
+      <WorkCard title="自動出校bot" img="/syukkou.png" link="syukkou" skill="Node.js, Puppeteer" role="すべて" description="デモ動画">
         <Text>
           GoogleForm自動入力bot。研究室の出校フォーム入力が面倒なので制作した。インターンでスクレイピングに使用していたPuppeteerを用いており、日付・時間を自動入力してくれる。
         </Text>

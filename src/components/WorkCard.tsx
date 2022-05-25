@@ -62,9 +62,17 @@ export const WorkCard = ({ id, title, img, link, skill, role, description, child
               <Box w="70%" overflow="hidden" mx="auto">
                 <Img src={img} w="100%" mx="auto" />
               </Box>
-            ) : link == 'gif' ? (
+            ) : link == 'syukkou' ? (
               <Box w="70%" overflow="hidden" mx="auto">
                 <Img src="/syukkou.gif" w="100%" mx="auto" />
+              </Box>
+            ) : link == 'fs-admin' ? (
+              <Box w="70%" overflow="hidden" mx="auto">
+                <Img src="/fs-admin.gif" w="100%" mx="auto" />
+              </Box>
+            ) : link == 'nosight' ? (
+              <Box w="70%" overflow="hidden" mx="auto">
+                <Img src="/nosight.gif" w="100%" mx="auto" />
               </Box>
             ) : (
               <Link href={link} target="_blank">
