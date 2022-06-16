@@ -54,6 +54,37 @@ export const WorkCardList = () => {
         </Text>
       </WorkCard>
       <WorkCard
+        id="replace"
+        title="Re:place"
+        img="/replace.png"
+        skill="Next.js, Rails, PostgreSQL, GCP, Firebase"
+        link="replace"
+        role="Webフロント開発(UI中心)"
+        description="デモ動画(7/1リリース予定)"
+      >
+        <Text>
+          学生ITスタートアップの株式会社DOKOSOREにて制作した、エンジニア向けのオンラインイベント開催プラットフォーム。主催者も参加者もワクワクできるような機能を多数搭載。本サービスの強みである「流れるようなUI/UX」の作製を主に担当した。
+        </Text>
+      </WorkCard>
+      <WorkCard
+        id="nosight"
+        title="農Sightダッシュボード"
+        img="/nosight.png"
+        skill="Next.js, TypeScript, React, Firebase"
+        link="nosight"
+        role="フロント開発"
+        description="デモ動画"
+      >
+        <Text>
+          学生スタートアップの株式会社DOKOSOREにて開発をお手伝い。
+          受託開発している農業DXサービスの業務用ダッシュボードを制作。チャット機能やデータのグラフ化等を実装。ユーザーがどういった機能を求めているかを聞きながら現在も改良中。
+          <br />
+          <Link href="https://expo.agrijournal.jp/booth/Sight/912071466345744720715/" target="_blank" textColor="blue.600">
+            詳細はコチラ
+          </Link>
+        </Text>
+      </WorkCard>
+      <WorkCard
         id="terada"
         title="Reborn to 寺田蘭世"
         img="/terada.png"
@@ -66,24 +97,6 @@ export const WorkCardList = () => {
           2Daysのハッカソンにてチーム4人で共同開発した、理想の芸能人と顔を比較してくれるサイト。顔を公正に評価することは難しいが、理想の顔との差なら分かるのではと思い制作。動きのあるUIと、初心者にも分かりやすいコード記法を意識した。
           <br />
           デザイン性の高さと短期間で画像認識に挑戦した点を評価され入賞(28チーム中)。
-        </Text>
-      </WorkCard>
-      <WorkCard
-        id="nosight"
-        title="農Sightダッシュボード"
-        img="/nosight.png"
-        skill="Next.js, TypeScript, React, Firebase"
-        link="nosight"
-        role="フロント開発、ヒアリング"
-        description="デモ動画"
-      >
-        <Text>
-          学生スタートアップの株式会社DOKOSOREにて開発をお手伝い。
-          受託開発している農業DXサービスの業務用ダッシュボードを制作。チャット機能やデータのグラフ化等を実装。ユーザーがどういった機能を求めているかを聞きながら現在も改良中。
-          <br />
-          <Link href="https://expo.agrijournal.jp/booth/Sight/912071466345744720715/" target="_blank" textColor="blue.600">
-            詳細はコチラ
-          </Link>
         </Text>
       </WorkCard>
       <WorkCard

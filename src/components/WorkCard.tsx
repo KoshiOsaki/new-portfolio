@@ -74,6 +74,10 @@ export const WorkCard = ({ id, title, img, link, skill, role, description, child
               <Box w="70%" overflow="hidden" mx="auto">
                 <Img src="/nosight.gif" w="100%" mx="auto" />
               </Box>
+            ) : link == 'replace' ? (
+              <Box w="70%" overflow="hidden" mx="auto">
+                <Img src="/replace.gif" w="100%" mx="auto" />
+              </Box>
             ) : (
               <Link href={link} target="_blank">
                 <Box w="70%" overflow="hidden" mx="auto" border="1px" borderColor="gray.300">
