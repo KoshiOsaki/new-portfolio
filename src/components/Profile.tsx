@@ -77,7 +77,16 @@ export const Profile = () => {
             <AccordionPanel pb={2}>2018年 　　東京工業大学 生命理工学系 入学</AccordionPanel>
             <AccordionPanel pb={2}>2021年7月〜現在　株式会社FUTUREWOODS 長期インターン</AccordionPanel>
             <AccordionPanel pb={2}>2022年 　　東京工業大学大学院 生命理工学コース 入学</AccordionPanel>
-            <AccordionPanel pb={2}>2022年5月　株式会社ワンキャリア 短期インターン</AccordionPanel>
+            <AccordionPanel pb={2}>
+              <Link href="https://note.com/koshiosaki/n/na3e3811240f0" target="_blank">
+                2022年5月　株式会社ワンキャリア 短期インターン
+              </Link>
+            </AccordionPanel>
+            <AccordionPanel pb={2}>
+              <Link href="https://note.com/koshiosaki/n/n3f8279275c9b" target="_blank">
+                2022年6月　パーソルキャリア株式会社 短期インターン
+              </Link>
+            </AccordionPanel>
           </Box>
         </AccordionItem>
       </Accordion>
