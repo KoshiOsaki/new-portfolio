@@ -29,6 +29,11 @@ export const Profile = () => {
 
   return (
     <>
+      {/* <Box h="500px">
+        <iframe className="note-embed" src="https://note.com/embed/notes/na3e3811240f0" width="90%" height="400"></iframe>
+        <iframe className="note-embed" src="https://note.com/embed/notes/n4a85a8be8a1c" width="90%" height="400"></iframe>
+        <script async src="https://note.com/scripts/embed.js"></script>
+      </Box> */}
       <Text fontWeight="bold" fontSize="3xl" mb="3" ml="2" mt="4">
         Profile
       </Text>
@@ -83,7 +88,7 @@ export const Profile = () => {
               </Link>
             </AccordionPanel>
             <AccordionPanel pb={2}>
-              <Link href="https://note.com/koshiosaki/n/n3f8279275c9b" target="_blank">
+              <Link href="https://note.com/koshiosaki/n/n4a85a8be8a1c" target="_blank">
                 2022年6月　パーソルキャリア株式会社 短期インターン
               </Link>
             </AccordionPanel>

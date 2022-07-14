@@ -16,7 +16,6 @@ export const SkillList = () => {
         <SkillColumn name="HTML/CSS" level={9} />
         <SkillColumn name="Python" level={5} />
         <SkillColumn name="SQL" level={4} />
-        <SkillColumn name="Docker, Github" level={6} />
       </Box>
     </>
   );
