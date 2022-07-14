@@ -1,0 +1,1 @@
+git log --date=iso --date=format:"%Y/%m/%d %H:%M:%S" --pretty=format:"%ad" -1 > last_commited_time.txt
