@@ -8,7 +8,7 @@ export const WorkCardList = () => {
         title="株式会社FUTUREWOODS サービスページ"
         img="/futuresearch.png"
         link="https://www.future-search.jp/"
-        skill="Next.js, TypeScript, React, TailWindCSS"
+        skill="Next.js, TypeScript, TailWindCSS"
         role="フロント開発 (UIの実装)"
         description=""
       >
@@ -20,7 +20,7 @@ export const WorkCardList = () => {
         title="株式会社FUTUREWOODS 企業ページ"
         img="/futurewoods.png"
         link="https://www.futurewoods.co.jp/"
-        skill="Next.js, TypeScript, React, TailWindCSS"
+        skill="Next.js, TypeScript, TailWindCSS"
         role="フロント開発 (UIの実装)"
         description=""
       >
@@ -51,6 +51,19 @@ export const WorkCardList = () => {
         <Text>
           生物系の学習プラットフォーム制作を目指す学生団体Cell
           Festivalのお手伝いにて、ホームページを制作。自分が生物専攻なのもあり、記事を実際に読んだり、追加機能を考えたりしながら開発している。記事の投稿、校閲をできる機能を作ったのが工夫した点。
+        </Text>
+      </WorkCard>
+      <WorkCard
+        title="Tapple風チャットアプリ"
+        img="/tapple.png"
+        link="none"
+        skill="Next.js, Nest.js, TypeScript, MySQL, Prisma"
+        role="Webフロントエンド"
+        description="非公開です。"
+      >
+        <Text>
+          株式会社サイバーエージェントのインターンにて制作(約2週間、4人)。Webフロントを担当し、MUI, TailwindCSSを用いたUIや自動生成のOpenAPI,
+          SWRを使用してのデータフェッチを実装。
         </Text>
       </WorkCard>
       <WorkCard
