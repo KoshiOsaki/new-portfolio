@@ -80,18 +80,56 @@ export const Profile = () => {
           <Box position="relative" mt="40px" border="1px" borderColor="gray.300">
             <AccordionPanel pb={2}>2015年 　　神奈川県立横浜翠嵐高等学校 入学</AccordionPanel>
             <AccordionPanel pb={2}>2018年 　　東京工業大学 生命理工学系 入学</AccordionPanel>
-            <AccordionPanel pb={2}>2021年7月〜現在　株式会社FUTUREWOODS 長期インターン</AccordionPanel>
+            <AccordionPanel pb={2}>2021年7月〜2022年6月　株式会社FUTUREWOODS 長期インターン</AccordionPanel>
             <AccordionPanel pb={2}>2022年 　　東京工業大学大学院 生命理工学コース 入学</AccordionPanel>
+          </Box>
+        </AccordionItem>
+      </Accordion>
+
+      <Accordion defaultIndex={[1]} allowMultiple reduceMotion={false} w={{ base: '340px', sm: '500px' }} mt="2">
+        <AccordionItem>
+          <AccordionButton _focus={{ _focus: 'none' }} w={{ base: '340px', sm: '500px' }} position="absolute" className={style.button}>
+            <Box flex="1" textAlign="left">
+              インターン参加歴
+            </Box>
+            <AccordionIcon />
+          </AccordionButton>
+
+          <Box position="relative" mt="40px" border="1px" borderColor="gray.300">
             <AccordionPanel pb={2}>
-              <Link href="https://note.com/koshiosaki/n/na3e3811240f0" target="_blank">
-                2022年5月　株式会社ワンキャリア 短期インターン
+              <Link href="https://note.com/preview/na3e3811240f0?prev_access_key=a4d589df579639cdc858ca56e21ef88a " target="_blank">
+                2022年5月　株式会社ワンキャリア (2days)
               </Link>
             </AccordionPanel>
             <AccordionPanel pb={2}>
-              <Link href="https://note.com/koshiosaki/n/n4a85a8be8a1c" target="_blank">
-                2022年6月　パーソルキャリア株式会社 短期インターン
+              <Link href="https://note.com/preview/n4a85a8be8a1c?prev_access_key=05ff88cc89ecb4f822a44a608cf48ddd" target="_blank">
+                2022年6月　パーソルキャリア株式会社 (5days)
               </Link>
             </AccordionPanel>
+
+            <AccordionPanel pb={2}>
+              <Link href=" https://note.com/preview/n610ecf2960a2?prev_access_key=6fc8af59bcee9e05c5f52b2df1a37d76" target="_blank">
+                2022年7月　チームラボ株式会社 (2weeks)
+              </Link>
+            </AccordionPanel>
+            <AccordionPanel pb={2}>
+              <Link href="https://note.com/preview/n09634832172e?prev_access_key=0d7cedd97271cca70526563d537c46fd" target="_blank">
+                2022年8月　株式会社グッドパッチ (1day)
+              </Link>
+            </AccordionPanel>
+            <AccordionPanel pb={2}>
+              <Link href="https://note.com/preview/n4440613c4da3?prev_access_key=0e6ad90aec26dd427ea3d856b7c20d9b" target="_blank">
+                2022年8月　株式会社サイバーエージェント (2weeks)
+              </Link>
+            </AccordionPanel>
+            <AccordionPanel pb={2}>
+              <Link href="https://note.com/preview/n73a634e4ec34?prev_access_key=8fce3e01526904195ec27fb86e92528c" target="_blank">
+                2022年8月　ラクスル株式会社 (5days)
+              </Link>
+            </AccordionPanel>
+            <AccordionPanel pb={2}>2022年9月　Sansan株式会社 (2weeks)</AccordionPanel>
+            <AccordionPanel pb={2}>2022年9月　株式会社ギフティ (3days)</AccordionPanel>
+            <AccordionPanel pb={2}>2022年10月　株式会社マネーフォワード (2weeks)</AccordionPanel>
           </Box>
         </AccordionItem>
       </Accordion>
