@@ -11,16 +11,17 @@ import { Profile } from '../components/Profile';
 import { FadeIn } from '../components/FadeIn';
 import { WorkCardList } from '../components/WorkCardList';
 import { SkillList } from '../components/SkillList.';
+import Image from 'next/image';
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(true);
   const [isOpen, setIsOpen] = useState(true);
   setTimeout(() => {
     setIsOpen(false);
-  }, 4000);
+  }, 3000);
   setTimeout(() => {
     setLoading(false);
-  }, 6000);
+  }, 4000);
 
   return (
     <>
@@ -33,12 +34,8 @@ const Home: NextPage = () => {
               width: isOpen ? '60vw' : 0,
             }}
           >
-            <Box zIndex="1000" left="50%" top="50%" position="fixed" display={{ base: 'none', sm: 'block' }}>
-              <video src="/title.mov" muted autoPlay className={style.anime} />
-            </Box>
-            {/* mobile */}
-            <Box zIndex="1000" left="50%" top="50%" position="fixed" display={{ base: 'block', sm: 'none' }}>
-              <video src="/title.mp4" muted autoPlay playsInline className={style.anime} />
+            <Box zIndex="1000" left="50%" top="50%" position="fixed" display={{ base: 'none', sm: 'block' }} transform="translate(-50%, -50%)">
+              <img src="/anime.svg" alt="" />
             </Box>
 
             <div className={style.loading}>

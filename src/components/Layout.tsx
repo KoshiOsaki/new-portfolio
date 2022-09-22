@@ -8,7 +8,9 @@ export const Layout: FC<Props> = ({ children }) => {
   return (
     <Box position="relative" overflow="hidden" pb="100px">
       <Header />
-      <Box pt="142px">{children}</Box>
+      <Box pt="142px" overflow="hidden">
+        {children}
+      </Box>
       <>
         <div className={style.circle1} />
         <div className={style.circle2} />
