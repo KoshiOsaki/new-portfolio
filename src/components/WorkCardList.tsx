@@ -34,6 +34,7 @@ export const WorkCardList = () => {
           株式会社FUTUREWOODSの長期インターンにて、学生3人で共同開発したサービスLP。初の業務だったためGithubの使い方や命名法、コンポーネント粒度など先輩のコードを見て真似した。レスポンシブ対応に注意して制作した。
         </Text>
       </WorkCard>
+
       <WorkCard
         id="tukete"
         title="Tukete"
@@ -43,7 +44,9 @@ export const WorkCardList = () => {
         role="フロント開発"
         description="製作中です。。。"
       >
-        <Text>Sansan株式会社のインターンにて制作。</Text>
+        <Text>
+          Sansan株式会社のインターンにて制作。ビジネスモデルの設計、ユーザーインタビューからプロトタイプの開発まで行った。UI/UXデザイン、Webフロントを担当した。
+        </Text>
       </WorkCard>
 
       <WorkCard
@@ -79,6 +82,17 @@ export const WorkCardList = () => {
           GoogleForm自動入力bot。研究室の出校フォーム入力が面倒なので制作した。インターンでスクレイピングに使用していたPuppeteerを用いており、日付・時間を自動入力してくれる。
         </Text>
       </WorkCard>
+      {/* <WorkCard
+        id="raksul"
+        title="ラクスルクイズ404ページ"
+        img="/tukete.png"
+        skill="Next.js, TypeScript, Kotlin, Python"
+        link="tukete"
+        role="フロント開発"
+        description="製作中です。。。"
+      >
+        <Text>Sansan株式会社のインターンにて制作。</Text>
+      </WorkCard> */}
       {/* <WorkCard
         title="株式会社FUTUREWOODS 企業ページ"
         img="/futurewoods.png"

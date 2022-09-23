@@ -83,7 +83,7 @@ const Home: NextPage = () => {
             </TabList>
             <TabPanels className={style.tabPanel}>
               <TabPanel>
-                <Flex wrap="wrap" px={{ sm: 2, md: 4, lg: 16 }} justify="center" pt="20">
+                <Flex wrap="wrap" px={{ sm: 2, md: 4, lg: 4 }} justify="center" pt="20" maxWidth="1400px" mx="auto">
                   <WorkCardList />
                 </Flex>
               </TabPanel>
