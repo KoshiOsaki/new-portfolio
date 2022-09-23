@@ -6,7 +6,7 @@ export const WorkCardList = () => {
     <>
       <WorkCard
         id="nosight"
-        title="農Sightダッシュボード"
+        title="農Sight"
         img="/nosight.png"
         skill="Next.js, TypeScript, Firebase"
         link="nosight"

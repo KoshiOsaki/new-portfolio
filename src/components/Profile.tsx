@@ -78,10 +78,10 @@ export const Profile = () => {
           </AccordionButton>
 
           <Box position="relative" mt="40px" border="1px" borderColor="gray.300">
-            <AccordionPanel pb={2}>2015年 　　神奈川県立横浜翠嵐高等学校 入学</AccordionPanel>
-            <AccordionPanel pb={2}>2018年 　　東京工業大学 生命理工学系 入学</AccordionPanel>
+            <AccordionPanel pb={2}>2015年 4月　神奈川県立横浜翠嵐高等学校 入学</AccordionPanel>
+            <AccordionPanel pb={2}>2018年 4月　東京工業大学 生命理工学系 入学</AccordionPanel>
             <AccordionPanel pb={2}>2021年7月〜2022年6月　株式会社FUTUREWOODS 長期インターン</AccordionPanel>
-            <AccordionPanel pb={2}>2022年 　　東京工業大学大学院 生命理工学コース 入学</AccordionPanel>
+            <AccordionPanel pb={2}>2022年 4月　東京工業大学大学院 生命理工学コース 入学</AccordionPanel>
           </Box>
         </AccordionItem>
       </Accordion>
