@@ -20,7 +20,7 @@ const Home: NextPage = () => {
   const router = useRouter();
   const fragment = router.asPath;
   useEffect(() => {
-    if (fragment) {
+    if (fragment.length > 2) {
       setIsOpen(false);
       setLoading(false);
     }
