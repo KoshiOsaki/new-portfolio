@@ -56,7 +56,7 @@ const Home: NextPage = () => {
           <></>
         )}
 
-        <Box w="90%" mx="auto">
+        <Box w="90%" mx="auto" minHeight="80vh">
           <Box h="30px" position="fixed" zIndex="100" backdropFilter="blur(5px)" w="93%" ml="-3"></Box>
           <Tabs isFitted variant="enclosed">
             <TabList mb="1em" position="fixed" zIndex="10" w="90.1%" mt="30px">
