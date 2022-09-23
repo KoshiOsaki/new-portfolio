@@ -1,6 +1,6 @@
 import { Box, Divider, Flex, HStack, Spacer, Text } from '@chakra-ui/react';
 import type { NextPage } from 'next';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import style from '../styles/home.module.css';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import { Header } from '../components/Header';
@@ -12,10 +12,20 @@ import { FadeIn } from '../components/FadeIn';
 import { WorkCardList } from '../components/WorkCardList';
 import { SkillList } from '../components/SkillList.';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(true);
   const [isOpen, setIsOpen] = useState(true);
+  const router = useRouter();
+  const fragment = router.asPath;
+  useEffect(() => {
+    if (fragment) {
+      setIsOpen(false);
+      setLoading(false);
+    }
+  }, []);
+
   setTimeout(() => {
     setIsOpen(false);
   }, 3000);

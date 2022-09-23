@@ -72,7 +72,7 @@ export const WorkCard = ({ id, title, img, link, skill, role, description, child
               </Box>
             ) : link == 'nosight' ? (
               <Box w="70%" overflow="hidden" mx="auto">
-                <Img src="/nosight.gif" w="100%" mx="auto" />
+                <video src="nosight_demo.mov" controls width="400px" style={{ margin: 'auto' }}></video>
               </Box>
             ) : link == 'replace' ? (
               <Box w="70%" overflow="hidden" mx="auto">
@@ -81,6 +81,10 @@ export const WorkCard = ({ id, title, img, link, skill, role, description, child
             ) : link == 'tapple' ? (
               <Box w="70%" overflow="hidden" mx="auto">
                 <Img src="/replace.gif" w="100%" mx="auto" />
+              </Box>
+            ) : link == 'tukete' ? (
+              <Box w="70%" overflow="hidden" mx="auto">
+                <video src="tukete.mov" controls width="400px" style={{ margin: 'auto' }}></video>
               </Box>
             ) : (
               <Link href={link} target="_blank">

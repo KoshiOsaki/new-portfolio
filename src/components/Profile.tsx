@@ -127,7 +127,11 @@ export const Profile = () => {
                 2022年8月　ラクスル株式会社 (5days)
               </Link>
             </AccordionPanel>
-            <AccordionPanel pb={2}>2022年9月　Sansan株式会社 (2weeks)</AccordionPanel>
+            <AccordionPanel pb={2}>
+              <Link href="https://note.com/preview/n4efc6e342fe9?prev_access_key=eda5c5b9025665fdf67de640ab1d7a68" target="_blank">
+                2022年9月　Sansan株式会社 (2weeks)
+              </Link>
+            </AccordionPanel>
             <AccordionPanel pb={2}>2022年9月　株式会社ギフティ (3days)</AccordionPanel>
             <AccordionPanel pb={2}>2022年10月　株式会社マネーフォワード (2weeks)</AccordionPanel>
           </Box>

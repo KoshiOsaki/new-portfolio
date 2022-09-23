@@ -42,11 +42,14 @@ export const WorkCardList = () => {
         skill="Next.js, TypeScript, Kotlin, Python"
         link="tukete"
         role="フロント開発"
-        description="製作中です。。。"
+        description="WFデモ動画"
       >
         <Text>
           Sansan株式会社のインターンにて制作。ビジネスモデルの設計、ユーザーインタビューからプロトタイプの開発まで行った。UI/UXデザイン、Webフロントを担当した。
         </Text>
+        <Link href="https://note.com/preview/n4efc6e342fe9?prev_access_key=eda5c5b9025665fdf67de640ab1d7a68" target="_blank" textColor="blue.600">
+          詳細はコチラ
+        </Link>
       </WorkCard>
 
       <WorkCard
