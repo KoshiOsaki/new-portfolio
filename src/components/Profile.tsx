@@ -147,7 +147,7 @@ export const Profile = () => {
         mt="3"
         w={{ base: '340px', sm: '500px' }}
       >
-        ビジョンプレゼン (2022年4月作製)
+        自己紹介プレゼン (2022年9月作製)
       </Text>
       {/* mobile */}
       <Link

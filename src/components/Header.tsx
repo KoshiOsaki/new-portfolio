@@ -11,7 +11,7 @@ export const Header = () => {
             Koshi&apos;s Portfolio
           </Text>
           <Text pt="70px" pr={{ sm: '0', md: '20', lg: '36' }} fontSize={{ base: 'xs', md: 'md' }}>
-            2022/09/23 更新
+            2022/09/27 更新
           </Text>
         </Flex>
       </Glass>
